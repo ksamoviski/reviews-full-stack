@@ -12,14 +12,14 @@
 </head>
 
 <body>
-<section class="book-details">
-    <h1 class="book-details__title" th:text="${review.title}">Zine Zinith</h1>
-    <p class="book-details__summary" th:text="${review.description}">
+<section class="review-details">
+    <h1 class="review-details__title" th:text="${review.title}">Zine Zinith</h1>
+    <p class="review-details__summary" th:text="${review.description}">
         A brief description of this review.
     </p>
 </section>
-<!--<div th:each="hashtag : ${book.hashTags}" th:text = "${hashtag.name}"></div>-->
 
+<!--<div th:each="hashtag : ${book.hashTags}" th:text = "${hashtag.name}"></div>-->
 
 <a class="nav__home" th:href="'/categories/'+${review.category.categoryType}">back to reviews</a>
 </body>

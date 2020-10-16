@@ -16,12 +16,12 @@
     <h1 class="header__title">You have chosen this category:</h1>
     <h2 th:text="${category.categoryType}"></h2>
 </header>
-<section class="book-list">
-    <h2 class="book-list__heading">Here is a list of our reviews:</h2>
-    <nav class="book-list-nav">
-        <ul class="book-list-links">
-            <li class="book-list-links__book" th:each="review:${category.reviews}">
-                <a class="book-list-links__link" th:href="@{'/reviews/'+ ${review.id}}"
+<section class="review-list">
+    <h2 class="review-list__heading">Here is a list of our reviews:</h2>
+    <nav class="review-list-nav">
+        <ul class="review-list-links">
+            <li class="review-list-links__book" th:each="review:${category.reviews}">
+                <a class="review-list-links__link" th:href="@{'/reviews/'+ ${review.id}}"
                    th:text="${review.title}">Hive Mind, Holy Shroud</a>
             </li>
 
