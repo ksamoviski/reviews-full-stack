@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
-    <title>Reviews</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Reviews List</title>
 </head>
-<body>
 
-<h1>Reviews</h1>
+<body>
+<h1>All My Reviews</h1>
+
+<h2 th:each="category:${categories}"><a th:href="@{'/categories/'+ ${category.categoryType}}"
+                                    th:text="${category.categoryType}">Category</a>
+</h2>
+<form action="add-category" method="POST">
+    <input name="categoryType" type="text">
+    <button type="submit">Add Category</button>
+</form>
 
 </body>
+
 </html>
