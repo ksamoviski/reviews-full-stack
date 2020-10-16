@@ -6,15 +6,15 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
 
-    <title>WeCanCodeIT Library Books</title>
+    <title>Single Category</title>
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/layout.css" rel="stylesheet">
 </head>
 
 <body>
 <header class="header">
-    <h1 class="header__title">Welcome to the WeCanCodeIT Library</h1>
-    <h2 th:text="${category.categoryType}">Category Type</h2>
+    <h1 class="header__title">You have chosen this category:</h1>
+    <h2 th:text="${category.categoryType}"></h2>
 </header>
 <section class="book-list">
     <h2 class="book-list__heading">Here is a list of our reviews:</h2>
@@ -27,7 +27,7 @@
 
         </ul>
     </nav>
-    <a class="nav__home" href="/categories">back to categories</a>
+    <a class="nav__home" href="/categories">back to all categories</a>
 </section>
 </body>
 

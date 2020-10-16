@@ -6,22 +6,21 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
 
-    <title>WeCanCodeIT Reviews : Hive Mind, Holy Shroud</title>
+    <title>Reviews : Zine Zinith</title>
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/layout.css" rel="stylesheet">
 </head>
 
 <body>
 <section class="book-details">
-    <h1 class="book-details__title" th:text="${review.title}">Hive Mind, Holy Shroud</h1>
+    <h1 class="book-details__title" th:text="${review.title}">Zine Zinith</h1>
     <p class="book-details__summary" th:text="${review.description}">
-        An art review
+        A brief description of this review.
     </p>
 </section>
+<!--<div th:each="hashtag : ${book.hashTags}" th:text = "${hashtag.name}"></div>-->
 
-<!--<div th:each="hashtag : ${review.hashTags}" th:text = "${hashtag.name}"></div>-->
 
-
-<a class="nav__home" th:href="'/categories/'+${review.category.categoryType}">back to books</a>
+<a class="nav__home" th:href="'/categories/'+${review.category.categoryType}">back to reviews</a>
 </body>
 </html>

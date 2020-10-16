@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Document</title>
+    <title>Reviews</title>
 </head>
 
 <body>
-<h1>We Can Code Libraries</h1>
+<h1>These are all our reviews</h1>
 
 <h2 th:each="review:${reviews}"><a th:href="@{'/reviews/'+ ${review.title}}"
-                                        th:text="${review.title}">Reviews</a>
+                                   th:text="${review.title}"></a>
 </h2>
 
 </body>

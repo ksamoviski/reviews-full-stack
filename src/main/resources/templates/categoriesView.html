@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Document</title>
+    <title>Review Categories</title>
 </head>
 
 <body>
-<h1>We Can Code Libraries</h1>
+<h1>Review Categories</h1>
 
 <h2 th:each="category:${categories}"><a th:href="@{'/categories/'+ ${category.categoryType}}"
-                                    th:text="${category.categoryType}">Category</a>
+                                        th:text="${category.categoryType}"</a>
 </h2>
 
 </body>
