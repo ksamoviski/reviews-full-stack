@@ -1,4 +1,4 @@
-package org.wcci.reviewsfullstack;
+package org.wcci.reviewsfullstack.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,6 +22,14 @@ public class Category {
         return id;
     }
 
+    public String getCategory() {
+        return category;
+    }
+
+    public Collection<Review> getReviews() {
+        return reviews;
+    }
+
     public Category(){
     }
 
@@ -29,9 +37,6 @@ public class Category {
         this.category = category;
     }
 
-    public Collection<Review> getReviews() {
-        return reviews;
-    }
 
     @Override
     public boolean equals(Object o) {
