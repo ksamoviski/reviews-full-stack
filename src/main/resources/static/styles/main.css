@@ -3,6 +3,9 @@
 * {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -15,4 +18,14 @@ h2 {
 
 ul {
     list-style: none;
+}
+
+.review-list {
+    padding-left: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

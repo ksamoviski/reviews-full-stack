@@ -3,15 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Reviews</title>
+
 </head>
 
 <body>
 <h1>These are all our reviews</h1>
 
-<h2 th:each="review:${reviews}"><a th:href="@{'/reviews/'+ ${review.title}}"
+<h2 th:each="review:${reviews}"><a th:href="@{'/reviews/'+ ${review.id}}"
                                    th:text="${review.title}"></a>
 </h2>
 
